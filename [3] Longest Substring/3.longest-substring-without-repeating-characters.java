@@ -10,7 +10,7 @@ import java.util.Hashtable;
 // @lc code=start
 class Solution {
     public int lengthOfLongestSubstring(String s) {
-        if (s.equals("")){
+        if (s.equals("")) {
             return 0;
         }
         String[] str = s.split("");
@@ -40,7 +40,7 @@ class Solution {
         }
 
         for (int key : result.keySet()) {
-            if (diffs < result.get(key).size()){
+            if (diffs < result.get(key).size()) {
                 diffs = result.get(key).size();
             }
         }
@@ -49,9 +49,9 @@ class Solution {
     }
 
     // public static void main(String[] args) {
-    //     var sol = new Solution();
-    //     String s = "pwwkew";
-    //     sol.lengthOfLongestSubstring(s);
+    // var sol = new Solution();
+    // String s = "pwwkew";
+    // sol.lengthOfLongestSubstring(s);
     // }
 }
 // @lc code=end
